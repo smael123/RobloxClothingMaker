@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:RobloxShirtMaker">
+
+    <BitmapImage x:Key="TorsoR0Image" UriSource="Resources/torso_r0.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoR1Image" UriSource="Resources/torso_r1.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoUpImage" UriSource="Resources/torso_up.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoFront0Image" UriSource="Resources/torso_front0.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoFront1Image" UriSource="Resources/torso_front1.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoDownImage" UriSource="Resources/torso_down.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoL0Image" UriSource="Resources/torso_l0.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoL1Image" UriSource="Resources/torso_l1.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoBack0Image" UriSource="Resources/torso_back0.png"></BitmapImage>
+    <BitmapImage x:Key="TorsoBack1Image" UriSource="Resources/torso_back1.png"></BitmapImage>
+
+    <BitmapImage x:Key="RightLimbL0Image" UriSource="Resources/limb_l0.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbL1Image" UriSource="Resources/limb_l1.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbL2Image" UriSource="Resources/limb_l2.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbB0Image" UriSource="Resources/limb_b0.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbB1Image" UriSource="Resources/limb_b1.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbB2Image" UriSource="Resources/limb_b2.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbR0Image" UriSource="Resources/limb_r0.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbR1Image" UriSource="Resources/limb_r1.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbR2Image" UriSource="Resources/limb_r2.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbUImage" UriSource="Resources/limb_u.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbF0Image" UriSource="Resources/limb_f0.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbF1Image" UriSource="Resources/limb_f1.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbF2Image" UriSource="Resources/limb_f2.png"></BitmapImage>
+    <BitmapImage x:Key="RightLimbDImage" UriSource="Resources/limb_d.png"></BitmapImage>
+
+    <BitmapImage x:Key="LeftLimbUImage" UriSource="Resources/limb_u.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbF0Image" UriSource="Resources/limb_f0.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbF1Image" UriSource="Resources/limb_f1.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbF2Image" UriSource="Resources/limb_f2.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbDImage" UriSource="Resources/limb_d.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbL0Image" UriSource="Resources/limb_l0.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbL1Image" UriSource="Resources/limb_l1.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbL2Image" UriSource="Resources/limb_l2.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbB0Image" UriSource="Resources/limb_b0.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbB1Image" UriSource="Resources/limb_b1.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbB2Image" UriSource="Resources/limb_b2.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbR0Image" UriSource="Resources/limb_r0.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbR1Image" UriSource="Resources/limb_r1.png"></BitmapImage>
+    <BitmapImage x:Key="LeftLimbR2Image" UriSource="Resources/limb_r2.png"></BitmapImage>
+
+</ResourceDictionary>

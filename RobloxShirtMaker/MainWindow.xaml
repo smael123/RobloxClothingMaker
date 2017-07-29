@@ -1,0 +1,228 @@
+﻿<Window x:Class="RobloxShirtMaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RobloxShirtMaker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1024">
+
+    <Window.Resources>
+
+        <ResourceDictionary x:Name="MergedDictionary">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="ImageDictionary" Source="DefaultImageDictionary.xaml" />
+                <ResourceDictionary x:Name="PictureButtonStyle" Source="PictureButtonStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <DockPanel>
+        <Menu x:Name="MenuBar" DockPanel.Dock="Top">
+            <MenuItem Header="_File" x:Name="FileMenu">
+                <MenuItem Header="_Exit" x:Name="ExitButton"/>
+            </MenuItem>
+            <MenuItem Header="_Version" x:Name="VersionMenu">
+                <MenuItem Header="_R6" x:Name="R6Button" IsCheckable="True" Click="R6Button_Click"/>
+                <MenuItem Header="_R15" x:Name="R15Button" IsCheckable="True" IsChecked="True" Click="R15Button_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Clothing" x:Name="ClothingMenu">
+                <MenuItem Header="_Shirt" x:Name="ShirtButton" IsCheckable="True" IsChecked="True" Click="ShirtButton_Click"/>
+                <MenuItem Header="_Pants" x:Name="PantsButton" IsCheckable="True" Click="PantsButton_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Help" x:Name="HelpMenu">
+                <MenuItem Header="_Instructions" x:Name="InstructionsButton"/>
+                <MenuItem Header="_About" x:Name="AboutButton"/>
+            </MenuItem>
+        </Menu>
+        <WrapPanel DockPanel.Dock="Right" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label x:Name="ClothingNameLabel" Content="Shirt Name:" />
+                <TextBox x:Name="ClothingNameTextBox" Width="100" />
+            </StackPanel>
+            <Button x:Name="CreateShirtButton" Content="Create Shirt" Margin="10" Click="CreateShirtButton_Click" />
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left">
+            <Grid x:Name="TorsoGrid" VerticalAlignment="Top" Margin="10,10,0,10" HorizontalAlignment="Left">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="TorsoR0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="2" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoR0Image}" MinWidth="64" MinHeight="96" />
+                </Button>
+                <Button x:Name="TorsoR1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="3" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoR1Image}" MinWidth="64" MinHeight="31" />
+                </Button>
+                
+                <Button x:Name="TorsoUpImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="1" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoUpImage}" MinWidth="128" MinHeight="64" />
+                </Button>
+                
+                <Button x:Name="TorsoFront0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="2" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoFront0Image}" MinWidth="128" MinHeight="96" />
+                </Button>
+                <Button x:Name="TorsoFront1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="3" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoFront1Image}" MinWidth="128" MinHeight="31"/>
+                </Button>
+                
+                <Button x:Name="TorsoDownImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="4" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoDownImage}" MinWidth="128" MinHeight="64" />
+                </Button>
+                
+                <Label x:Name="TorsoLabel" Grid.Column="0" Grid.Row="0" Content="Torso" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="4" FontSize="22" />
+                
+                <Button x:Name="TorsoL0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="2" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoL0Image}" MinWidth="64" MinHeight="96"/>
+                </Button>
+                <Button x:Name="TorsoL1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="3" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoL1Image}" MinWidth="64" MinHeight="31"/>
+                </Button>
+                
+                <Button x:Name="TorsoBack0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="2" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoBack0Image}" MinWidth="128" MinHeight="96" />
+                </Button>
+                <Button x:Name="TorsoBack1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="3" Click="SetImageInImageBox" >
+                    <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource TorsoBack1Image}" MinWidth="128" MinHeight="31" />
+                </Button>
+            </Grid>
+            <WrapPanel x:Name="LimbWrapPanel" Margin="0,10,0,0">
+                <Grid x:Name="RightLimbGrid" Margin="0,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Content="Right Arm" Grid.ColumnSpan="4" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" ></Label>
+                    <Button x:Name="RightLimbL0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbL0Image}" MinWidth="64" MinHeight="52"/>
+                    </Button>
+                    <Button x:Name="RightLimbL1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbL1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="RightLimbL2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbL2Image}" MinWidth="64" MinHeight="36" />
+                    </Button>
+                    
+                    <Button x:Name="RightLimbB0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbB0Image}" MinWidth="64" MinHeight="52" />
+                    </Button>
+                    <Button x:Name="RightLimbB1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbB1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="RightLimbB2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbB2Image}" MinWidth="64" MinHeight="36"/>
+                    </Button>
+
+                    <Button x:Name="RightLimbR0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbR0Image}" MinWidth="64" MinHeight="52" />
+                    </Button>
+                    <Button x:Name="RightLimbR1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbR1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="RightLimbR2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbR2Image}" MinWidth="64" MinHeight="36"/>
+                    </Button>
+
+                    <Button x:Name="RightLimbUImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="1" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbUImage}" MinWidth="64" MinHeight="64"/>
+                    </Button>
+                    <Button x:Name="RightLimbF0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbF0Image}" MinWidth="64" MinHeight="52" />
+                    </Button>
+                    <Button x:Name="RightLimbF1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbF1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="RightLimbF2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbF2Image}" MinWidth="64" MinHeight="36" />
+                    </Button>
+                    <Button x:Name="RightLimbDImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="5" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource RightLimbDImage}" MinWidth="64" MinHeight="64" />
+                    </Button>
+
+                </Grid>
+                <Grid x:Name="LeftLimbGrid" Margin="10,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Content="Left Arm" Grid.ColumnSpan="4" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" ></Label>
+
+                    <Button x:Name="LeftLimbUImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="1" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbUImage}" MinWidth="64" MinHeight="64" />
+                    </Button>
+                    <Button x:Name="LeftLimbF0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbF0Image}" MinWidth="64" MinHeight="52" />
+                    </Button>
+                    <Button x:Name="LeftLimbF1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbF1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="LeftLimbF2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbF2Image}" MinWidth="64" MinHeight="36" />
+                    </Button>
+                    <Button x:Name="LeftLimbDImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="0" Grid.Row="5" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbDImage}" MinWidth="64" MinHeight="64" />
+                    </Button>
+
+                    <Button x:Name="LeftLimbL0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbL0Image}" MinWidth="64" MinHeight="52"/>
+                    </Button>
+                    <Button x:Name="LeftLimbL1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbL1Image}" MinWidth="64" MinHeight="38"/>
+                    </Button>
+                    <Button x:Name="LeftLimbL2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="1" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbL2Image}" MinWidth="64" MinHeight="36"/>
+                    </Button>
+
+                    <Button x:Name="LeftLimbB0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbB0Image}" MinWidth="64" MinHeight="52" />
+                    </Button>
+                    <Button x:Name="LeftLimbB1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbB1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="LeftLimbB2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="2" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbB2Image}" MinWidth="64" MinHeight="36" />
+                    </Button>
+
+                    <Button x:Name="LeftLimbR0ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="2" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbR0Image}" MinWidth="64" MinHeight="52" />
+                    </Button>
+                    <Button x:Name="LeftLimbR1ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="3" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbR1Image}" MinWidth="64" MinHeight="38" />
+                    </Button>
+                    <Button x:Name="LeftLimbR2ImageBox" Style="{DynamicResource NoChromeButton}" Grid.Column="3" Grid.Row="4" Click="SetImageInImageBox" >
+                        <Image Style="{DynamicResource BodyImageStyle }" Source="{DynamicResource LeftLimbR2Image}" MinWidth="64" MinHeight="36" />
+                    </Button>
+                </Grid>
+            </WrapPanel>
+        </WrapPanel>
+    </DockPanel>
+</Window>
