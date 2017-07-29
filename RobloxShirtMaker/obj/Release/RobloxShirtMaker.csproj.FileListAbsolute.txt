@@ -1,0 +1,15 @@
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\bin\Release\RobloxShirtMaker.exe.config
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\bin\Release\RobloxShirtMaker.exe
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\bin\Release\RobloxShirtMaker.pdb
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\MainWindow.g.cs
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\App.g.cs
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker_MarkupCompile.cache
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker_MarkupCompile.lref
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\DefaultImageDictionary.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\MainWindow.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\PictureButtonStyle.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker.g.resources
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker.Properties.Resources.resources
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker.csproj.GenerateResource.Cache
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker.exe
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\RobloxShirtMaker.pdb

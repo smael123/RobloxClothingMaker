@@ -31,3 +31,18 @@ C:\Users\izzy\Documents\Visual Studio 2017\Projects\RobloxShirtMaker\RobloxShirt
 C:\Users\izzy\Documents\Visual Studio 2017\Projects\RobloxShirtMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker.csproj.GenerateResource.Cache
 C:\Users\izzy\Documents\Visual Studio 2017\Projects\RobloxShirtMaker\RobloxShirtMaker\obj\Debug\DefaultImageDictionary.baml
 C:\Users\izzy\Documents\Visual Studio 2017\Projects\RobloxShirtMaker\RobloxShirtMaker\obj\Debug\PictureButtonStyle.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\bin\Debug\RobloxShirtMaker.exe.config
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\bin\Debug\RobloxShirtMaker.exe
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\bin\Debug\RobloxShirtMaker.pdb
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\MainWindow.g.cs
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\App.g.cs
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker_MarkupCompile.cache
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker_MarkupCompile.lref
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\DefaultImageDictionary.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\MainWindow.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\PictureButtonStyle.baml
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker.g.resources
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker.Properties.Resources.resources
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker.csproj.GenerateResource.Cache
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker.exe
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\RobloxShirtMaker.pdb

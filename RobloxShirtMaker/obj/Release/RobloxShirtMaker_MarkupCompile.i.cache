@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Debug\
+C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\obj\Release\
 RobloxShirtMaker
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\izzy\Source\Repos\RobloxClothingMaker\RobloxShirtMaker\App.xaml
 31930275503
 
-171132740916
+172023223431
 15-503747610
 DefaultImageDictionary.xaml;MainWindow.xaml;PictureButtonStyle.xaml;
 
